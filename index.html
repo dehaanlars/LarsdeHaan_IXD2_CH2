@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-utf-8"/>
+     	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+      	<title>Lars de Haan</title>
+      	<link rel="stylesheet" type="text/css" href="style.css">
+      	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+      	<script src="script.js"></script>     			
+    <head>
+      
+     <body id="body" onload="startTime(), checkDate()">
+     	<div id="divclock">
+     		<div id="clock">
+        <!--Svg element for the clock-->
+				<svg id="Laag_1" data-name="Laag 1" xmlns="http://www.w3.org/2000/svg" width="118.9mm" height="118.9mm" viewBox="0 0 337.03 337.03">
+					<defs>
+            <!--Gradient for inside the clock-->
+						<linearGradient id="verloop1" data-name="Naamloos verloop" x1="0.5" y1="168.51" x2="336.53" y2="168.51" gradientUnits="userSpaceOnUse">
+					    	<stop id="gradient1" offset="0" stop-color="#fff"/>
+					    	<stop id="gradient2" offset="1" stop-color="#fff"/>
+						</linearGradient>
+						<linearGradient id="verloop2" x1="0" y1="168.51" x2="337.03" y2="168.51" xlink:href="#verloop1"/>
+					</defs>
+          <!--Element of the clock-->
+					<circle id="cicl" cx="168.51" cy="168.51" r="168.01" stroke-miterlimit="10" fill="url(#verloop1)" stroke="url(#verloop2)"/>
+					<line id="kleinew" x1="168.51" y1="168.51" x2="168.51" y2="251.84" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
+					<line id="grotew" x1="168.51" y1="168.51" x2="168.51" y2="309.6" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
+				</svg>
+     		</div>	 
+        <!--Element for digital clock and the date-->
+     		<div id="clocktext">
+     			<h1 id="time"></h1>
+     			<h2 id="date">test</h2>
+     		</div>
+     	</div>	
+     </body> 	
+</hmtl>  
